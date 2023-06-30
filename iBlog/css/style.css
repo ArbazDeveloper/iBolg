@@ -1,0 +1,191 @@
+* {
+    /* * is for all */
+    margin: 0;
+    padding: 0;
+}
+
+.navigation {
+
+    margin: 2px auto;
+
+    font-family: var(--font1);
+
+   /* height: 74px; */
+    /* background-color: red; */
+
+    /* to make navigation a flex box */
+    display: flex;
+
+    /* it would put equal spaces between contents of flex box */
+    justify-content: space-between;
+    /*from left to  right */
+
+    align-items: center;
+    /*equal space  from top  to  bottom */
+
+
+}
+
+.navleft {
+
+    font-size: 35px;
+    display: flex;
+    /* //all elements inside navleft awould be align in line but not elements inside ul  */
+}
+
+
+.navleft span {
+
+    font-size: 35px;
+    font-weight: bolder;
+
+}
+
+.navleft ul {
+    /* to make elemnts inside ul align on line make navleft ul a flex box */
+    display: flex;
+    align-items: center;
+    margin: 0 70px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navleft ul li {
+    list-style: none;
+    /*to remove dots or point or -> */
+    margin: 0 14px;
+    font-family: var(--font2);
+}
+
+
+
+
+.navleft ul li a {
+    text-decoration: none;
+    /*to remove underline below */
+    color: black;
+}
+
+.navleft ul li a:hover {
+    color: brown;
+    font-weight: bolder;
+
+
+}
+
+.content {
+
+    height: 100%; /* as we do not want hard core height */
+    margin: 25px auto;
+    /* background-color: rgb(173, 200, 227); */
+    display: flex;
+    padding: 9px;
+    position: relative;
+
+}
+
+.content::after {
+    content: "";
+    background-image: url('../img/bg.jpg');
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    /*inherit means same height  as parent */
+    opacity: 0.30;
+}
+
+
+.footer{
+
+    margin: auto;
+    /* margin-top: 20px; */
+    height: 50px;
+    background-color: brown;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    /*so that all content align vertically*/
+
+}
+
+.footer a {
+    color: white;
+}
+
+.contentleft {
+
+    font-family: var(--font1);
+    /* width: 50%;  we have remove width of content right and left so that content left take remaiining width */
+    display: flex;
+
+    margin: 5px;
+    padding: 12px;
+
+    /*all items would be align in column*/
+    flex-direction: column;
+    /* align-items: center;  as we do not want it  to align to center */
+    justify-content: center;
+    z-index: 1;
+}
+
+.contentright {
+
+    /* width: 50%;  we have remove width of content right and left so that content left take remaiining width */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentright img {
+    height: 228px;
+    border: 2px solid black;
+    border-radius: 126px;
+    padding: 0px;
+}
+
+
+.home-articles {
+    /* //height: 455px;   so that content inside it does not flow outside home-article*/
+    /* background-color: rgb(229, 153, 153); */
+    padding: 12px;
+    position: relative;
+}
+
+.year-box {
+    position: absolute;
+    width: 234px;
+    height: 255px;
+    /* background-color: red; */
+    right: 103px;
+    top: 90px;
+    font-size: 18px;
+}
+
+.year-box div{
+    margin: 12px 0px;
+}
+
+.home-article {
+    display: flex;
+    margin: 25px;
+}
+
+.home-article-content {
+    align-self: center;
+    padding: 25px;
+}
+
+.home-article img {
+    width: 300px;
+}
+
+.home-article-content a {
+    text-decoration: none;
+    color: black;
+}
+
+.navleft a{
+    margin-top: 8px;
+}

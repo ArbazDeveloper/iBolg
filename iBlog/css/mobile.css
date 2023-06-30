@@ -1,0 +1,48 @@
+/* add media query   (it is an query which is applicable for some particular width)*/
+
+@media screen and (max-width: 1200px){
+
+.navigation{
+    flex-direction: column;
+    margin-bottom: 23px;
+}
+
+.navleft{
+    flex-direction: column;
+    text-align: center; /* it would bring logo to center and above home,about,contact*/
+}
+
+.contentright{
+    display: none; /*it remove the contentright */
+}
+
+.home-article{
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-article-img{
+    text-align: center;
+    width: 70vw;
+}
+
+.year-box{
+    top: 25px;
+    left: 70vw;
+    font-size: 11px;
+    display: flex;
+}
+
+.year-box div{
+    padding: 0 3px;
+   margin: 0px;
+}
+
+.form-box input, textarea {
+    width: 66vw;
+}
+
+.row{
+    flex-direction: column;
+}
+}

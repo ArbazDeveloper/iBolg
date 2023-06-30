@@ -1,0 +1,27 @@
+.contact-content {
+
+     height: 100vh;
+    margin: 25px auto;
+    /* background-color: rgb(173, 200, 227); */
+        
+     padding: 9px; 
+    position: relative;
+    overflow: hidden;
+    font-family: var(--font1);
+}
+
+.contact-content::after{
+    content: "";
+    background-image: url('../img/bg.jpg');
+    position: absolute;
+    top: 0;  /*?*/
+    width: 100%;
+   height: inherit;    /*inherit means same height  as parent */
+    opacity: 0.30;
+    z-index: -1; /* what is it  (when while positioning one element goes behind other element we usually use z-index)*/
+}
+
+/* .contact-form{
+    height: 80vh;
+} */
+

@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Glory&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Glory&family=Roboto&display=swap');
+
+:root {
+    /* css variables */
+    --main-bg-color: brown;
+    --font1:'Glory', sans-serif;
+    --font2:'Roboto', sans-serif;
+}
+
+
+.max-width-1 {
+    /* it would change the width of class contianer */
+    max-width: 80vw;
+    /* for making it responsive we are giving width in vw  */
+}
+
+.max-width-2 {
+    max-width: 60vw;
+}
+
+.m-auto {
+    /* this class would center the containt */
+    margin: auto;
+}
+
+.btn {
+    padding: 5px 15px;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-family: var(--font1);
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: all 0.4s ease-in-out;
+}
+
+.btn:hover{
+    color: white;
+    background-color: brown;
+}
+
+.form-input {
+
+    padding: 6px 23px;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin: 0 5px;
+    font-family: var(--font1);
+}
+
+.form-box input, textarea{
+    width: 44vw;
+    padding: 4px 6px;
+    margin: 7px 0;
+    font-size: 18px;
+    font-family: var(--font1);
+    border: 2px solid black;
+}
+
+.center{
+    text-align: center;
+}
